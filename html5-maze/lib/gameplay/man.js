@@ -122,7 +122,7 @@ function drawMan()
     //drawn the new position of the man
     var manDrawX = manPosition.x * tileWidth;
     var manDrawY = manPosition.y * tileHeight;
-    var img=document.getElementById("button-up");
+    var img=document.getElementById("personaje");
     ctx.drawImage(img,
                  manDrawX + (tileWidth * 0.15), //x
                  manDrawY + (tileHeight * 0.15), //y

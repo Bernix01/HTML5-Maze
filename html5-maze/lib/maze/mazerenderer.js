@@ -73,9 +73,10 @@ function renderMaze(mazeCanvas)
     var goalWidth = tileWidth*0.7;
     var goalHeight = tileHeight*0.7;
     
-    ctx.fillStyle=GOAL_COLOUR;
-    
-    ctx.fillRect(goalX + (tileWidth * 0.15), //x
+    //ctx.fillStyle=GOAL_COLOUR;
+    var goalimg = document.getElementById("goal");
+    ctx.drawImage(goalimg,
+                  goalX + (tileWidth * 0.15), //x
                  goalY + (tileHeight * 0.15), //y
                  goalWidth, goalHeight);
 }
